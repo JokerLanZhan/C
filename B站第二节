@@ -1,0 +1,246 @@
+#define _CRT_SECURE_NO_WARNINGS 1//这句话一定加在源文件的第一行
+
+#include <stdio.h>
+
+#include <string.h>
+
+
+//int main()
+//{
+//	int line = 0;
+//	printf("加入比特\n");
+//
+//	while(line<20000)
+//	{
+//		printf("敲一行代码:%d\n",line);
+//		line++;
+//	}
+//	if (line>=20000)
+//		printf("好offer\n");
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	int input = 0;
+//	printf("加入比特\n");
+//	printf("你要好好学习吗？（选择1 or 0）>:");
+//	scanf("%d", &input);// 1/0
+//
+//	if(input == 1)
+//		printf("好offer\n");
+//	else
+//		printf("卖红薯\n");
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	
+//	int a = 0;
+//	
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	printf("%c\n",'\x61');
+//	// \x61 ：61是2个十六进制数字
+//	
+//	//printf("%d\n",strlen("c:\test\32\test.c"));
+//	//printf("%c\n",'\132');
+//	// \32: 32是2个八进制数字
+//	// 32作为8进制代表的那个十进制数字，作为ASCII码值，对应的字符
+//	// 32转换为十进制为26 ，这个26就作为ASCII码值代表的字符
+//	return 0;
+//}
+
+
+
+//int main()
+//{
+//	//printf("c:\\test\32\\test.c");
+//	// \t:水平制表符
+//
+//	//printf("%c\n",'\'');
+//	printf("%s\n","\"");
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	printf("abc\n");//\n:转义字符
+//	printf("abc");
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	char arr1[] ="abc";
+//	char arr2[] ={'a','b','c};
+//	printf("%d\n",strlen(arr1));//strlen - string length  用来计算字符串长度的
+//	printf("%d\n",strlen(arr2));
+//	//答案：strlen（arr1） = 3；strlen（arr2） = 随机值
+//	return 0;
+//}
+
+//int main()
+//{
+//	////数据在计算机上存储的时候，存储的是二进制
+//	////#av$
+//	////a - 97
+//	////A - 65
+//	////...
+//	////ASCII 编码
+//	////ASCII 码值
+//	//char arr1[] = "abc";//数组
+//	////"abc" -- 'a','b','c','\0'   '\0' - 字符串的结束标志，隐藏在字符串的末尾
+//	//char arr2[] ={'a','b','c','\0'};
+//	////'\0' - 0
+//	////'a' - 97
+//	////'a','b','c'
+//	//printf("%s\n",arr1);//abc
+//	//printf("%s\n",arr2);//abc烫烫烫烫蘟bc
+//
+//	//return 0;
+//}
+
+//in float
+//char
+//字符串类型
+//int main()
+//{
+//	"abcdef";
+//	"hello bite";
+//	"";//空字符串
+//
+//	return 0 ;
+//}
+
+
+
+
+
+//4.枚举常量
+//枚举： 一一列举
+//
+//性别：男，女，保密
+//三原色：红，黄，蓝
+//星期：1，2，3，4，5，，6，7
+
+//枚举关键 - enum
+
+//enum Color
+//{
+//	RED,
+//	YELLOW,
+//	BLUE
+//};
+//
+//int main()
+//{
+//	enum Color color = BLUE;
+//	color = YELLOW;
+//	//BLUE = 6;//大括号里定义的枚举常量是不能改的
+//	return 0;
+//}
+
+//enum Sex
+//{
+//	MALE,
+//	FEMALE,
+//	SECRT
+//};
+////MALE,FEMALE,SECRT - 枚举常量
+//int main()
+//{
+//	//enum Sex s = FEMALE; 
+//	printf("%d\n",MALE);//0
+//	printf("%d\n",FEMALE);//1
+//	printf("%d\n",SECRT);//2
+//	return 0;
+//}
+
+
+////3.#define定义的标识符常量
+//#define MAX 10
+//int main()
+//{
+//	int arr[MAX] = {0};
+//	printf("%d\n",MAX);
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	int num1 = 0;
+//	int num2 = 0;
+//	int sum = 0;
+//	scanf("%d%d",&num1,&num2);
+//	//scanf
+//	//strcpy
+//	//strlen
+//	//strcat
+//	//...
+//	//这些库函数传统意义上都是不安全的
+//	//strcpy_s
+//	//...
+//	sum = num1 + num2;
+//	printf("sum = %d\n",sum);
+//	return 0;
+//}
+
+
+
+//int main()
+//{
+//	//const - 常属性
+//	const int n = 10;//n 是变量，但是又有常属性，所以我们说n是常变量
+//	//int arr[n] = {0};
+//	//n =20;
+//
+//
+//	////const修饰的常变量
+//	//const int num = 4;
+//	//printf("%d\n",num);
+//	//num = 8;
+//	//printf("%d\n",num);
+//	
+//	////字面常量
+//	//3;
+//	//100;
+//	//3.14;
+//
+//	return 0;
+//}
+
+int Add(int x,int y)
+{
+	int z = x+y;
+	return z;
+}
+
+int main()
+{
+	int num1 = 10;
+	int num2 = 20;
+	int sum = 0;
+	int a = 100;
+	int b = 200;
+	//sum = num1 + num2;
+	sum = Add(num1,num2);
+	//sum = a + a;
+	sum = Add(a,b);
+	sum = Add(2,3);
+	printf("sum = %d\n",sum);
+	return 0;
+}
+//函数
+//f(x) = 2*x+1;
+//f(x,y) = x+y;
