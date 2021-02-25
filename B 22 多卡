@@ -220,27 +220,164 @@
 //	return 0;
 //}
 
-int Add(int x,int y)
-{
-	int z = x+y;
-	return z;
-}
+
+
+//int Add(int x,int y)
+//{
+//	int z = x+y;
+//	return z;
+//}
+//
+//int main()
+//{
+//	int num1 = 10;
+//	int num2 = 20;
+//	int sum = 0;
+//	int a = 100;
+//	int b = 200;
+//	//sum = num1 + num2;
+//	sum = Add(num1,num2);
+//	//sum = a + a;
+//	sum = Add(a,b);
+//	sum = Add(2,3);
+//	printf("sum = %d\n",sum);
+//	return 0;
+//}
+////函数
+////f(x) = 2*x+1;
+////f(x,y) = x+y;
+
+
+
+//数组
+//int main()
+//{
+//	//int a = 1;
+//	//int b = 2;
+//	//int c = 3;
+//	//int d = 4;
+//	int arr[10] = {1,2,3,4,5,6,7,8,9,10};//定义一个存放10整数数字的数组
+//	//0-9
+//	int i = 0;
+//	while(i<10)
+//	{
+//		printf("%d", arr[i]);
+//		i++;
+//	}
+//	//printf("%d\n", arr[4]);//下标的方式访问元素
+//	//arr[下标]
+//	//char ch[20];
+//	//float arr2[5];
+//	return 0;
+//}
+
+
+
+
+//int main()
+//{
+//	int a = 5%2;//取模
+//	printf("%d\n", a);
+//	return 0;
+//}
+
+
+
+//int main()
+//{
+//	//移位操作符
+//	// << 左移
+//	// >> 右移
+//	int a = 1;
+//	//整型1占4个字节 - 32bit位
+//	//0000 0000 0000 0000 0000 0000 0000 0001
+//	int b = a<<2;
+//	// b = a + 1;
+//	printf("%d\n", b);
+//	printf("%d\n", a);
+//	return 0;
+//}
+
+
+
+//int main()
+//{
+//	//(2进制)位操作
+//	// & 按位与
+//	// | 按位或
+//	// ^ 按位异或
+//	//int a = 3;// 3转换二进制为 011
+//	//int b = 5;// 5转换二进制为 101
+//	//int c = a&b;//结果为 001
+//	//int a = 3;
+//	//int b = 5;
+//	//int c = a|b;//结果为 111
+//	int a = 3;
+//	int b = 5;
+//	int c = a^b; // ^不是次方-是异或    结果为110
+//	//异或的计算规律：
+//	//对应的二进制相同，则为0；
+//	//对应的二进制不同，则为1；
+//	printf("%d\n", c);
+//	return 0;
+//}
+
+
+
+//int main()
+//{
+//	int a = 10;
+//	a = 20;// 一个等号（=）叫赋值；两个等号（==）叫判断相等
+//	a = a + 10;// 1
+//	a += 10;// 2
+//	a = a - 20;
+//	a -= 20;
+//	a = a & 2;
+//	a &= 2;
+//	//复合赋值符
+//	// +=  -= /= %= <<= >>= &= |= ^=
+//	return 0;
+//}
+
+
+//单目操作符
+//双目操作符
+//三目操作符
+//int main()
+//{
+//	//int a = 10;
+//	//int b = 20;
+//	//a+b;// + 叫双目操作符
+//	//C语言中表示真假
+//	// 0 表示假
+//	//非0 表示真
+//	//int a = 0;
+//	int a = -2;
+//	int b = -a;
+//	int c = +3;// + 正号都会省略
+//	printf("%d\n", a);
+//	printf("%d\n", !a);
+//
+//	return 0;
+//}
+
+
 
 int main()
 {
-	int num1 = 10;
-	int num2 = 20;
-	int sum = 0;
-	int a = 100;
-	int b = 200;
-	//sum = num1 + num2;
-	sum = Add(num1,num2);
-	//sum = a + a;
-	sum = Add(a,b);
-	sum = Add(2,3);
-	printf("sum = %d\n",sum);
+	int arr[10] = {0};//10个整型元素的数组
+	int sz = 0;
+	// 10 * sizeof(int) = 40
+	printf("%d\n", sizeof(arr));
+	//计算数组的元素的个数
+	//个数 = 数组总大小 / 每个元素的大小
+	 sz = sizeof(arr) / sizeof(arr[0]);
+	 printf("%d\n", sz);
+	//int a = 10;
+	//// sizeof计算的是变量或者类型所占空间的大小，单位是字节
+	//printf("%d\n", sizeof(a));//4
+	//printf("%d\n", sizeof(int));
+	//printf("%d\n", sizeof a);
+	//printf("%d\n", sizeof int);
 	return 0;
 }
-//函数
-//f(x) = 2*x+1;
-//f(x,y) = x+y;
