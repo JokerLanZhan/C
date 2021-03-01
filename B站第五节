@@ -4,45 +4,147 @@
 
 int main()
 {
-	int day = 0;
-	scanf("%d ", &day);
-	switch(day)
+	int ch = 0;
+	//ctrl + z
+	//EOF - end of file -> -1
+	while((ch = getchar()) != EOF)
 	{
-	case 1:
-		printf("星期1\n");
-		break;
-	case 2:
-		printf("星期2\n");
-		break;
-	case 3:
-		printf("星期3\n");
-		break;
-	case 4:
-		printf("星期4\n");
-		break;
-	case 5:
-		printf("星期5\n");
-		break;
-	case 6:
-		printf("星期6\n");
-		break;
-	case 7:
-		printf("星期天\n");
-		break;
+		putchar(ch);
 	}
 
-
-	//if(1 == day)
-	//	printf("星期一\n");
-	//else if(2 == day)
-	//	printf("星期二\n");
-	//else if(3 == day)
-	//	printf("星期三\n");
-	//else if(4 == day)
-	//	printf("星期四\n");
-	////...
+	//int ch = getchar();
+	//putchar(ch);
+	//printf("%c\n", ch);
 	return 0;
 }
+
+
+
+//int main()
+//{
+//	//while(1)
+//	//	printf("hehe\n");
+//
+//	int i = 1;
+//	while(i<=10)
+//	{
+//		i++;
+//		if(5 == i)
+//			continue;//终止循环中本次循环，continue 后面的代码不在执行，直接跳转到判断部分
+//		printf("%d ",i);
+//		
+//	}
+//
+//	//while(i<=10)
+//	//{
+//	//	if (5 == i)
+//	//		break;
+//	//	printf("%d ",i);
+//	//	i++;
+//	//}
+//
+//	//if(1)
+//	//	printf("hehe\n");
+//	return  0;
+//}
+
+
+
+//int main()
+//{
+//	int n = 1;
+//	int m = 2;
+//	switch(n)
+//	{
+//	case 1:
+//		m++;
+//	case 2:
+//		n++;
+//	case 3:
+//		switch(n)
+//		{//switch允许嵌套使用
+//		case 1:
+//			n++;
+//		case 2:
+//			m++;
+//			n++;
+//			break;
+//		}
+//	case 4:
+//		m++;
+//		break;
+//	default:
+//		break;
+//	}
+//	printf("n = %d, m = %d\n", n, m);
+//	return 0;
+//}
+
+
+
+//int main()
+//{
+//	int day = 0;
+//	int n =1;
+//	scanf("%d ", &day);
+//	switch(day)
+//	{
+//	//default 与 case 没有顺序，但是建议把default放在最后
+//	default:
+//		printf("输入错误\n");
+//		break;
+//	case 1:
+//	case 2:
+//	case 3:
+//	case 4:
+//	case 5:
+//		printf("工作日\n");
+//		break;
+//	case 6:
+//	case 7:
+//		printf("休息日\n");
+//		break;
+//	}
+//
+//	//int day = 0;
+//	//int n =1;
+//	//scanf("%d ", &day);
+//	//switch(day)
+//	//{
+//	//case 1:
+//	//	printf("星期1\n");
+//	//	break;
+//	//case 2:
+//	//	printf("星期2\n");
+//	//	break;
+//	//case 3:
+//	//	printf("星期3\n");
+//	//	break;
+//	//case 4:
+//	//	printf("星期4\n");
+//	//	break;
+//	//case 5:
+//	//	printf("星期5\n");
+//	//	break;
+//	//case 6:
+//	//	printf("星期6\n");
+//	//	break;
+//	//case 7:
+//	//	printf("星期天\n");
+//	//	break;
+//	//}
+//	//...
+//	//if(1 == day)
+//	//	printf("星期一\n");
+//	//else if(2 == day)
+//	//	printf("星期二\n");
+//	//else if(3 == day)
+//	//	printf("星期三\n");
+//	//else if(4 == day)
+//	//	printf("星期四\n");
+//	////...
+//	return 0;
+//}
 
 
 
